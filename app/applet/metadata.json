@@ -1,0 +1,6 @@
+{
+  "name": "Lord Nine Guide",
+  "description": "MMORPG item guide, base statistics, and monster drop location explorer for Lord Nine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
