@@ -276,12 +276,31 @@ fun ItemDetailModal(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // TABEL STATISTIK DASAR ITEM
-            SectionHeader(
-                title = "STATISTIK DASAR",
-                icon = Icons.Default.FlashOn,
-                accentColor = GoldBorder
-            )
+            // TABEL STATISTIK DASAR ITEM (Dengan label Estimasi Decode sesuai CATATAN)
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                SectionHeader(
+                    title = "STATISTIK DASAR",
+                    icon = Icons.Default.FlashOn,
+                    accentColor = GoldBorder
+                )
+                Surface(
+                    color = Color(0xFF261D0C),
+                    shape = RoundedCornerShape(4.dp),
+                    border = androidx.compose.foundation.BorderStroke(0.8.dp, GoldBorder.copy(alpha = 0.8f))
+                ) {
+                    Text(
+                        text = "Data: Estimasi Decode / l9.db",
+                        color = GoldAccent,
+                        fontSize = 9.5.sp,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                    )
+                }
+            }
 
             Spacer(modifier = Modifier.height(8.dp))
 
